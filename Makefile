@@ -11,7 +11,6 @@ guard-%:
 commit: guard-msg format check # format code, check that quality is OK, then commit
 	git add .
 	git commit -m "$(msg)"
-	git push
 
 format: # apply as many suggested improvement as possible automatically
 	autoflake -ri --remove-all-unused-imports $(PACKAGE_NAME)

@@ -19,12 +19,7 @@ class Calculator:
         """Determine a property reference rate by browsing the internet."""
 
     def compute_notary_fees(self) -> float:
-        """Compute fees collected by notary at the sell of the property.
-
-        Args:
-            property_price: Raw price of the property without any tax included.
-            old_property: Boolean that indicates wether this property is more than 4 years old.
-        """
+        """Compute fees collected by notary at the sell of the property."""
         old_property = datetime.now() - self.real.build_date > timedelta(years=5)
 
         if old_property:
