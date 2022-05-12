@@ -3,6 +3,7 @@
 autoflake
 black
 docformatter
+flake8
 isort
 pylint
 
