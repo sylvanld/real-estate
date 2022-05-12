@@ -1,0 +1,9 @@
+-r prod.txt
+
+autoflake
+black
+docformatter
+isort
+
+sphinx
+sphinx-material
