@@ -4,6 +4,7 @@ autoflake
 black
 docformatter
 isort
+pylint
 
 sphinx
 sphinx-material
