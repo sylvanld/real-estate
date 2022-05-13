@@ -3,7 +3,7 @@
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 
-from properties.models import RealEstateAgency, RealEstateProperty
+from real_estate.models import RealEstateAgency, RealEstateProperty
 
 
 @dataclass
