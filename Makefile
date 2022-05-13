@@ -45,3 +45,8 @@ build-doc: ## automatically build package documentation from docstrings
 
 show-doc: ## open a webserver to preview documentation
 	cd public && python -m http.server --bind localhost 5555
+
+death-regex:
+	find infrapi -name '*.py' | xargs sed -i -r 's/"""([a-z])/"""\U\1/g'
+	find infrapi -name '*.py' | xargs sed -ri 's/"""(.+)[^\.]"""/"""\1."""/g'
+	find infrapi -name '*.py' | xargs sed -ri 's/"""(.+)[^\.]\n/"""\1.\n/g'
