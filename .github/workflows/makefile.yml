@@ -33,7 +33,7 @@ jobs:
     - name: Publish on branch
       run: |
         rm -rf /tmp/public && mv public /tmp/public
-        git checkout documentation || (git checkout --orphan documentation && rm -rf *)
+        git fetch && git checkout documentation || (git checkout --orphan documentation && rm -rf *)
         echo "<meta http-equiv='refresh' content='0; URL=${GITHUB_REF#refs/tags/}' />" > index.html
         mv /tmp/public ${GITHUB_REF#refs/tags/}
         git add .
