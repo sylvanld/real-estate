@@ -5,5 +5,5 @@ black
 docformatter
 flake8
 isort
-pdoc
+pdoc3
 pylint
