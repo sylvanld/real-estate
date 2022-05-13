@@ -5,7 +5,5 @@ black
 docformatter
 flake8
 isort
+pdoc
 pylint
-
-sphinx
-sphinx-material
